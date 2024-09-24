@@ -24,11 +24,12 @@ const Search = ({ onSearchChange }) => {
             }
 
             return {
-                options: result.data.map(city => ({
-                    value: `${city.latitude} ${city.longitude}`,
-                    label: `${city.name} ${city.countryCode}`,
+                options: result.data.map((city) => {
+                    return {
+                        value: `${city.latitude} ${city.longitude}`,
+                        label: `${city.name} ${city.countryCode}`,}
                 }
-                ))
+                )
             };
         } catch (error) {
             console.error(error);

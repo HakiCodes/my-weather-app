@@ -34,7 +34,7 @@
     width: 130px;
 }
 
-.temperature{
+.temperature {
     font-size: 50px;
     margin: 0;
     width: auto;
@@ -46,6 +46,19 @@
 }
 
 .parameter-row {
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
+
+.parameter-label {
+    text-align: left;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.parameter-value {
+    text-align: right;
+    font-weight: 400;
+    font-size: 15px;
+}
+
