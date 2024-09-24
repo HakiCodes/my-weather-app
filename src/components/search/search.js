@@ -19,6 +19,10 @@ const Search = ({ onSearchChange }) => {
             const response = await fetch(url, geoApiOptions);
             const result = await response.json();
 
+            if (!result || !result.data || !Array.isArray(result.data)) {
+                return { options: [] };
+            }
+
             return {
                 options: result.data.map(city => ({
                     value: `${city.latitude} ${city.longitude}`,
