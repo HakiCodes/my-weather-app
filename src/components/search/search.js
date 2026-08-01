@@ -10,7 +10,7 @@ const Search = ({ onSearchChange }) => {
         const geoApiOptions = {
             method: 'GET',
             headers: {
-                'x-rapidapi-key': '25a185b0a9msh6237c5744b324bbp1041c5jsnd9286d560982',
+                'x-rapidapi-key': process.env.REACT_APP_GEO_API_KEY,
                 'x-rapidapi-host': 'wft-geo-db.p.rapidapi.com'
             }
         };

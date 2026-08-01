@@ -2,3 +2,13 @@
   max-width: 1080px;
   margin: 20px auto;
 }
+
+.status-message {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+.status-message.error {
+  color: #c0392b;
+}
